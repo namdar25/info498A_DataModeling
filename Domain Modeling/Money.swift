@@ -14,10 +14,25 @@ enum Currency {
     case EUR
     case CAN
 }
-struct Money {
+
+func + (var left: Money, right: Money) -> Money {
+    left.addMoney(right)
+    return left
+}
+func - (var minuend: Money, subtrhend: Money) ->Money {
+    minuend.subtractMoney(subtrhend)
+    return minuend
+}
+
+struct Money : CustomStringConvertible, Mathematics{
     
-    var amount : Float
+    var amount : Double
     var currency : Currency
+    var description : String {
+        get {
+                return "\(currency)\(amount)"
+        }
+    }
     
     mutating func convert(newCurrency: Currency) {
         if newCurrency != currency {

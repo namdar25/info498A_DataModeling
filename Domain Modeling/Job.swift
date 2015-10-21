@@ -13,10 +13,15 @@ enum SalaryType {
     case YEARLY
 }
 
-class Job {
+class Job : CustomStringConvertible {
     var title: String
     var salary: Float
     var salaryType: SalaryType
+    var description : String {
+        get {
+            return "\(title) \(salary) \(salaryType)"
+        }
+    }
     
     init(title: String, salary: Float, salaryType: SalaryType) {
         self.title = title

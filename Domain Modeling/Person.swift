@@ -8,13 +8,18 @@
 
 import Foundation
 
-class Person {
+class Person :CustomStringConvertible {
     
     var firstName: String
     var lastName: String
     var age: Int
     private var job: Job?
     private var spouse: Person?
+    var description : String {
+        get {
+            return "\(toString())"
+        }
+    }
     
     init(firstName: String,lastName: String, age: Int, job: Job?, spouse: Person?) {
         self.firstName = firstName

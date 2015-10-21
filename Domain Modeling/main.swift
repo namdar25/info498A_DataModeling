@@ -24,8 +24,8 @@ func testAddMoney(var addend1: Money, addend2: Money) {
 }
 
 func testSubtractMoney(var minuend: Money, subtrahend: Money) {
-    print("The first addend is \(minuend.amount) \(minuend.currency), the second addend is \(subtrahend.amount) \(subtrahend.currency)")
-    minuend.addMoney(subtrahend)
+    print("The minuend is \(minuend.amount) \(minuend.currency), the subtrahend is \(subtrahend.amount) \(subtrahend.currency)")
+    minuend.subtractMoney(subtrahend)
     print("The sum is \(minuend.amount) \(minuend.currency)")
 }
 
@@ -148,11 +148,55 @@ print("/////////////////////////////////////////////////////////////////////")
 testHaveChild(family1, firstName: "Erin", lastName: "Rogers")
 testHaveChild(family2, firstName: "Tyler", lastName: "Jones")
 
+print("/////////////////////////////////////////////////////////////////////")
+print("/////////////////////////////////////////////////////////////////////")
+print("/////////////////////////////////////////////////////////////////////")
+print("/////////////////////////////////////////////////////////////////////")
+print("/////////////////////////////////////////////////////////////////////")
+print("/////////////////////////////////////////////////////////////////////")
+print("/////////////////////////////////////////////////////////////////////")
 
+print("CUSTOMSTRINGCONVERTIBLE TESTS////////////////////////////////////////")
+func testCustomStringConvertible(object: CustomStringConvertible) -> String {
+    return object.description
+}
 
+print("\(testCustomStringConvertible(money1))")
+print("\(testCustomStringConvertible(money3))")
+print("\(testCustomStringConvertible(money7))")
+print("\(testCustomStringConvertible(job1))")
+print("\(testCustomStringConvertible(job3))")
+print("\(testCustomStringConvertible(job7))")
+print("\(testCustomStringConvertible(person1))")
+print("\(testCustomStringConvertible(person3))")
+print("\(testCustomStringConvertible(person7))")
+print("\(testCustomStringConvertible(family1))")
+print("\(testCustomStringConvertible(family2))")
 
+print("MATEMATICS TESTS////////////////////////////////////////////////////")
 
+print("\((money1 + money2).description)")
+print("\((money3 + money4).description)")
+print("\((money5 + money6).description)")
+print("\((money7 + money8).description)")
+print("\((money1 - money2).description)")
+print("\((money3 - money4).description)")
+print("\((money5 - money6).description)")
+print("\((money7 - money8).description)")
 
+print("DOUBLEEXTENSION TESTS///////////////////////////////////////////////")
+
+var double1 : Double = 1.1
+var double2 : Double = 13.65456
+var double3 : Double = 2513.252
+var double4 : Double = 42.56
+var double5 : Double = 76.24
+var double6 : Double = 653.78
+
+print("\(double1.USD.description)")
+print("\(double2.EUR.description)")
+print("\(double3.GBP.description)")
+print("\(double4.CAN.description)")
 
 
 

@@ -12,6 +12,9 @@
 		149E01E71BD06D98001A187A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E01E61BD06D98001A187A /* Job.swift */; settings = {ASSET_TAGS = (); }; };
 		149E01E91BD06DA6001A187A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E01E81BD06DA6001A187A /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 		149E01EB1BD06DBA001A187A /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149E01EA1BD06DBA001A187A /* Family.swift */; settings = {ASSET_TAGS = (); }; };
+		14EC5FB51BD7584500542279 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC5FB41BD7584500542279 /* CustomStringConvertible.swift */; settings = {ASSET_TAGS = (); }; };
+		14EC5FB71BD75CC000542279 /* Mathematics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC5FB61BD75CC000542279 /* Mathematics.swift */; settings = {ASSET_TAGS = (); }; };
+		14EC5FB91BD75F6000542279 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC5FB81BD75F6000542279 /* DoubleExtension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,9 @@
 		149E01E61BD06D98001A187A /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		149E01E81BD06DA6001A187A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		149E01EA1BD06DBA001A187A /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		14EC5FB41BD7584500542279 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
+		14EC5FB61BD75CC000542279 /* Mathematics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mathematics.swift; sourceTree = "<group>"; };
+		14EC5FB81BD75F6000542279 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 				149E01E61BD06D98001A187A /* Job.swift */,
 				149E01E81BD06DA6001A187A /* Person.swift */,
 				149E01EA1BD06DBA001A187A /* Family.swift */,
+				14EC5FB41BD7584500542279 /* CustomStringConvertible.swift */,
+				14EC5FB61BD75CC000542279 /* Mathematics.swift */,
+				14EC5FB81BD75F6000542279 /* DoubleExtension.swift */,
 			);
 			path = "Domain Modeling";
 			sourceTree = "<group>";
@@ -130,11 +139,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EC5FB91BD75F6000542279 /* DoubleExtension.swift in Sources */,
 				149E01EB1BD06DBA001A187A /* Family.swift in Sources */,
 				149E01E51BD06D84001A187A /* Money.swift in Sources */,
 				149E01E71BD06D98001A187A /* Job.swift in Sources */,
 				149E01E91BD06DA6001A187A /* Person.swift in Sources */,
 				149E01DE1BD03335001A187A /* main.swift in Sources */,
+				14EC5FB51BD7584500542279 /* CustomStringConvertible.swift in Sources */,
+				14EC5FB71BD75CC000542279 /* Mathematics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

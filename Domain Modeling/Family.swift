@@ -8,9 +8,18 @@
 
 import Foundation
 
-class Family {
+class Family : CustomStringConvertible{
     
     var members: [Person]
+    var description : String {
+        get {
+            var string : String = "The members of this family are"
+            for var index = 0; index < members.count; index++ {
+                string += ", \(members[index].toString())"
+            }
+            return "\(string)"
+        }
+    }
     
     init(members: Person...) {
         self.members = members
